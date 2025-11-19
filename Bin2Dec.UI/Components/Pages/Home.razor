@@ -1,0 +1,31 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+<PageTitle>Bin2Dec</PageTitle>
+
+<div class="fullscreen-background">
+    <div class="card">
+        <h3>Bin2Dec</h3>
+        <p></p>
+        <p style="color: #4c4b4b;">Binary: <input style="margin-left:10px" @bind="InputValue" @oninput="HandleInput" placeholder="101010" /></p>
+
+        @if (Bin2DecConverter.InputIsValidBinaryNumber(InputValue))
+        {
+            <p style="color: #4c4b4b;">Decimal:</p>
+            @Bin2DecConverter.ConvertBinaryToDecimal(InputValue)
+        }
+        else
+        {
+            <p class="input-message">Please enter a binary number</p>
+        }
+    </div>
+</div>
+
+@code {
+    private string InputValue { get; set; } = "";
+
+    private void HandleInput(ChangeEventArgs e)
+    {
+        InputValue = e.Value?.ToString();  // Updates the InputValue on every input change
+    }
+}
