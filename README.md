@@ -1,5 +1,5 @@
 # Bin2Dec
-Deployment: http://projects.ccl97.com/bin2dec
+Deployment: https://projects.ccl97.com/bin2dec
 
 App made for the challenge [App Ideas](https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Bin2Dec-App.md)
 
