@@ -15,6 +15,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bin2Dec.UI", "Bin2Dec.UI\Bi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bin2Dec.Shared", "Bin2Dec.Shared\Bin2Dec.Shared.csproj", "{CCB75FAB-1884-40F8-BA06-277D5AC2E304}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bin2Dec.WASM", "Bin2Dec.WASM\Bin2Dec.WASM\Bin2Dec.WASM.csproj", "{366A43CA-BF40-4CAE-8E90-F26EFD1CEC5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bin2Dec.WASM.Client", "Bin2Dec.WASM\Bin2Dec.WASM.Client\Bin2Dec.WASM.Client.csproj", "{D87F1965-A0C5-40DB-BBF3-9681D6C2F095}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CCB75FAB-1884-40F8-BA06-277D5AC2E304} = {CCB75FAB-1884-40F8-BA06-277D5AC2E304}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +40,14 @@ Global
 		{CCB75FAB-1884-40F8-BA06-277D5AC2E304}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCB75FAB-1884-40F8-BA06-277D5AC2E304}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCB75FAB-1884-40F8-BA06-277D5AC2E304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{366A43CA-BF40-4CAE-8E90-F26EFD1CEC5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{366A43CA-BF40-4CAE-8E90-F26EFD1CEC5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{366A43CA-BF40-4CAE-8E90-F26EFD1CEC5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{366A43CA-BF40-4CAE-8E90-F26EFD1CEC5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D87F1965-A0C5-40DB-BBF3-9681D6C2F095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D87F1965-A0C5-40DB-BBF3-9681D6C2F095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D87F1965-A0C5-40DB-BBF3-9681D6C2F095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D87F1965-A0C5-40DB-BBF3-9681D6C2F095}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

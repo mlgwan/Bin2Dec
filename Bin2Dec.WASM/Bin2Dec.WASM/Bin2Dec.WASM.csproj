@@ -4,14 +4,19 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>91606b5e-a964-4d1a-b494-19a3270d846c</UserSecretsId>
+    <UserSecretsId>dee84a6d-d380-4721-9a7e-13fd9031b18b</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\images\background.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bin2Dec.WASM.Client\Bin2Dec.WASM.Client.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.22" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
   </ItemGroup>
-	<ItemGroup>
-		<ProjectReference Include="..\Bin2Dec.Shared\Bin2Dec.Shared.csproj" />
-	</ItemGroup>
+
 </Project>
